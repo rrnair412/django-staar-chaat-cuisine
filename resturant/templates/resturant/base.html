@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>STAR CHAAT CUISINE</title>
+<!-- bootstrap-css -->
+<link href="{% static 'blog/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="{% static 'blog/css/style.css' %}" type="text/css" media="all" />
+<!--// css -->
+<link rel="stylesheet" href="{% static 'blog/css/owl.carousel.css' %}" type="text/css" media="all">
+<link href="{% static 'blog/css/owl.theme.css' %}" rel="stylesheet">
+<!-- font-awesome icons -->
+<link href="{% static 'blog/css/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+  <script src="{% static 'blog/js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'blog/js/bootstrap.js' %}"></script>
+  <script src="{% static 'blog/js/SmoothScroll.min.js' %}"></script>
+<!-- font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+
+</head>
+<body {% if body_class %} class = '{{body_class}}' {% endif %}>
+  <!-- banner -->
+  <div class="banner">
+    <!--header-->
+    <div class="header">
+      <div class="logo">
+        <h1><a href="/">STAR CHAAT CUISINE</a></h1>
+      </div>
+      <div class="top-nav">
+        <span class="menu"><img src="{% static 'blog/images/menu.png' %}" alt=""/></span>
+        <ul>
+          <li><a class="active" href="{% url 'resturant-home' %}">Home</a></li>
+          <li><a href="{% url 'resturant-about' %}">About</a></li>         
+          <li><a href="{% url 'resturant-menu' %}">Menu</a></li>
+          <li><a href="{% url 'resturant-catering' %}">Catering</a></li>
+          <li><a href="{% url 'resturant-gallery' %}">Gallery</a></li>
+          <li><a href="{% url 'resturant-contact' %}">Contact</a></li>
+        </ul>
+        <!-- script-for-menu -->
+        <script>          
+          $("span.menu").click(function(){
+            $(".top-nav ul").slideToggle("slow" , function(){
+            });
+          });
+        </script>
+        <!-- script-for-menu -->
+      </div>
+        <div class="clearfix"> </div>
+    </div>  
+    <!--//header-->
+             {% block content %}{% endblock %}
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="agile-footer-grids">
+        <div class="col-md-3 agile-footer-grid">
+          <img src="{% static 'blog/images/logo.jpg' %}" alt="staar-chaat-cuisine-logo" class = "logo-img"/>
+
+        </div>
+
+        <div class="col-md-3 agile-footer-grid">
+          <h4>About Star Chaat Cuisine</h4>
+          <p><b>STAR CHAAT CUISINE</b> is an Indian restaurant located in the Dublin, California</p>
+          <a href="{% url 'resturant-about' %}" class="btn btn-hero btn-medium" role="button">Read More</a>
+        </div>
+
+        <div class="col-md-3 agile-footer-grid">
+          <h4>Popular Items</h4>
+          <div class="popular-grids">
+            <div class="popular-grid">
+              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s1.jpg' %}" alt="" /></a>
+            </div>
+            <div class="popular-grid">
+              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s2.jpg' %}" alt="" /></a>
+            </div>
+            <div class="popular-grid">
+              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s3.jpg' %}" alt="" /></a>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="popular-grids">
+            <div class="popular-grid">
+              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s5.jpg' %}" alt="" /></a>
+            </div>
+            <div class="popular-grid">
+              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s6.jpg' %}" alt="" /></a>
+            </div>
+            <div class="popular-grid">
+              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s7.jpg' %}" alt="" /></a>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile-footer-grid">
+          <h5>Get In Touch<h5>
+          <div class="agileinfo-social-grids">
+            <ul>
+              <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-circled.png"></a></li>
+              <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
+              <li><a href="#"><img src="https://img.icons8.com/office/48/000000/instagram-new.png"></a></li>
+              <li><a href="#"><img src="https://img.icons8.com/color/48/000000/youtube.png"></a></li>
+            </ul>
+            <a href="{% url 'resturant-contact' %}" class="btn btn-hero btn-medium" role="button">Contact Us</a>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+  <!-- //footer -->
+  <!-- agileits-copyright -->
+  <div class="agileits-copyright">
+    <div class="container">
+      <p>© 2019 Star Chaat Cuisine. All rights reserved</p>
+    </div>
+  </div>
+
+
+    <!-- //agileits-copyright -->
+  <script src="{% static 'blog/js/owl.carousel.js' %}"></script>  
+  <script>
+  $(document).ready(function() { 
+    $("#owl-demo").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay:true,
+      items : 4,
+      itemsDesktop : [640,5],
+      itemsDesktopSmall : [414,4]
+ 
+    }); 
+  });
+
+ /* $(function(){
+    var current = location.pathname;
+    $('.top-nav li a').each(function(){
+        var $this = $(this);
+        console.log($this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+}) */
+  </script>
+</body> 
+</html>

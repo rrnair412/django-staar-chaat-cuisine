@@ -1,0 +1,168 @@
+{% extends "resturant/base.html" %}
+{% block content %}
+   <!--//header-->
+    <!-- Banner -->
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Chase the flavors</h1>        
+        </hgroup>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">SEE ALL DISHES</a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>The master of kitchen</h1>        
+        </hgroup>       
+          <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">SEE ALL DISHES</a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>True Indian flavor</h1>        
+        </hgroup>
+        <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">SEE ALL DISHES</a>
+      </div>
+    </div>
+  </div> 
+</div>
+
+  </div>
+  <!-- //banner -->
+  <!---728x90--->
+
+  <!-- history -->
+  <div class="history">
+  <div class="row">
+    <h1 style="
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-bottom: 26px;
+">ABOUT STAR CHAAT CUISINE</h1>
+    <div class="col-md-6">
+      <div class="col-md-4">
+        <img src="/static/blog/images/about-img-3.jpg">
+        </div>
+        <div class="col-md-4">
+        <img src="/static/blog/images/about-img-4.jpg">
+        </div>
+        <div class="col-md-4">
+        <img src="/static/blog/images/s3.jpg">
+        </div>
+    </div>
+    <div class="col-md-6 content-area">
+      <p><b>STAR CHAAT CUISINE</b> is an Indian restaurant located in the Dublin, California.</p>
+
+      <p>Try us and you'll be convinced! Our recipes are authentic and time-tested. The ingredients are always fresh. The result? A menu that bursts with flavor.</p>
+
+      <p>At <b>STAR CHAAT CUISINE</b>, we know that sound and smell intimately, from our own kitchens growing up. We have experienced the deliciousness that happens when our moms bring out their spice tiffins, and get their magic on.</p>
+    </div>
+
+  </div>
+  </div>
+  <!-- history -->
+
+  <!-- services -->
+  <div class="services">
+    <div class="container">
+      <div class="services-info">
+        <h3 style="text-decoration: underline;">Our Dishes</h3>
+       
+      </div>
+    </div>
+    <div class="services-grids">
+      <div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s1.jpg" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Potato Peas Samosa</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s2.jpg" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Masala Chaat</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>        
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s4.jpg" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Misal Pav</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s3.jpg" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Shahi Dum Aloo</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>             
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s5.png" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Masala Bhindi</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s6.jpg" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Chana Masala</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s7.jpg" alt="" />
+              <div class="services-grid-caption"> 
+                <h4>Gulab lassi</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <div class="services-grid-info">
+              <img src="/static/blog/images/s8.jpg" alt="" />
+              <div class="services-grid-caption">
+                <h4>Gajjar Halwa</h4>
+                <a href="{% url 'resturant-menu' %}" class="btn btn-hero btn-lg" role="button">MENU</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- //services -->
+
+  {% endblock content %}
