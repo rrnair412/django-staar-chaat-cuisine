@@ -1,27 +1,142 @@
 {% extends "resturant/base.html" %}
+{% load static %}
 {% block content %}
-	<div class="about-heading">
-			<h2>About us</h2>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<div class="col-md-4">
-				<img src="/static/blog/images/about-img-3.jpg">
-		    </div>
-		    <div class="col-md-4">
-				<img src="/static/blog/images/about-img-4.jpg">
-		    </div>
-		    <div class="col-md-4">
-				<img src="/static/blog/images/s3.jpg">
-		    </div>
-		</div>
-		<div class="col-md-6 content-area">
-			<p><b>STAR CHAAT CUISINE</b> is an Indian restaurant located in the Dublin, California</p>
+    <!-- bradcam_area_start -->
+  <div class="bradcam_area breadcam_bg_1 overlay">
+    <h3>about us</h3>
+</div>
+<!-- bradcam_area_end -->
+<div class="about_area about-inner">
+        <div class="container">
+            <div class="row align-items-center">
+              
+                <div class="col-xl-6 col-lg-6  col-md-12">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <h3>About star chaat cuisine</h3>
+                        </div>
+                        <p><span>STAR CHAAT CUISINE</span> is an Indian restaurant located in the Dublin, California.</p><p>
 
-			<p>Try us and you'll be convinced! Our recipes are authentic and time-tested. The ingredients are always fresh. The result? A menu that bursts with flavor.</p>
+Try us and you'll be convinced! Our recipes are authentic and time-tested. The ingredients are always fresh. The result? A menu that bursts with flavor.</p><p>
 
-			<p>At <b>STAR CHAAT CUISINE</b>, we know that sound and smell intimately, from our own kitchens growing up. We have experienced the deliciousness that happens when our moms bring out their spice tiffins, and get their magic on.</p>
-		</div>
+At<span> STAR CHAAT CUISINE,</span> we know that sound and smell intimately, from our own kitchens growing up. We have experienced                  the deliciousness that happens when our moms bring out their    spice tiffins, and get their magic on.</p>
 
-	</div>
+<div class="btn-area"><a href="/about" class="btn btn-primary">Read More</a></div>
+                    
+                    </div>
+                </div>
+				  <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="about_thumb2 row">
+                        <div class="col-sm-6 img_1">
+						<div class="box-h">
+						<div class="box1"><h5>MALAI-KOFTA</h5></div>
+                            <img src="{% static 'blog/img/malai-kofta.jpg' %}" alt="">
+							</div>
+							<div class="box-h">
+							  <div class="box2"><h5>Shahi Dum AAloo</h5></div>
+                            <img src="{% static 'blog/img/aaloo_dum.jpg' %}" alt="">
+							</div>
+							
+                        </div>
+                        <div class="col-sm-6 img_2">
+						<div class="box-h">
+						<div class="box1"><h5>Spicy Paneer Wrap</h5></div>
+                            <img src="{% static 'blog/img/BigSpicy-Paneer-Wrap.jpg' %}" alt="">
+							</div>
+							<div class="box-h">
+							<div class="box3"><h5>Gajjar Halwa</h5></div>
+                            <img src="{% static 'blog/img/gajjar_halwa.jpg' %}" alt="">
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="dish-section meals">
+ <div class="container">
+ <div class="title-h">
+<h2 style="color:#ca0808; text-shadow:none; text-shadow: 0px 3px #ffffff;">Our Meals</h2>
+</div>
+<div class="row mt-80">
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Appetizer
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Daily Specials
+</div>
+</div>
+
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Star Indian 
+Vegetable Entrees
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Star Indian Breads
+</div>
+</a>
+</div>
+
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Tandoori Kababs
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Star Chat Wraps
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Star Indian Soups & Salads
+</div>
+</a>
+</div>
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Thalis
+</div>
+</a>
+</div>
+
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box">
+Refereshment and Beverages
+</div>
+</a>
+</div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+<a href="/menu">
+<div class="meal-box" style="margin-bottom:0px;">
+Desserts
+</div>
+</a>
+</div>
+
+ </div>
+
+ </div>
+ </div>
 {% endblock content %}

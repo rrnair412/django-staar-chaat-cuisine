@@ -1,93 +1,604 @@
 {% extends "resturant/base.html" %}
+{% load static %}
 {% block content %}
-	<div class="about-heading">
-			<h2>Catering
-		</div>
-	</div>
 
-<div class="container">
-<div class="row catering">
-
-            <div class="col-md-4 tiny ">
-              <div class="content-catering">	
-            	<div class ="pricing-table-header-img">
-            	<img src="/static/blog/images/package-1.jpg">
-                </div>
-                <div class="pricing-table-header">
-                    <h3>TANDOORI CONCEPT</h3>
-                     <p class="text-right price"><b>Price :</b>$14.99/person</p>
-                </div>
-                <div class="pricing-table-features">
-                    <ul>
-						<li>1 Appetizer</li>
-						<li>1 Sizzler</li>
-						<li>2 Vegetables</li>
-						<li>1 Lentil</li>
-						<li>Assorted Breads</li>
-						<li>Jeera Rice</li>
-						<li>Raita</li>
-						<li>House Salad</li>
-						<li>Dessert (Choose 1) </li>
-						<li>Rasmalai/Gulab Jamun/ Kheer</li>
-					</ul>
-                </div>
-              </div>	  
-            </div>
-
-            <div class="col-md-4 tiny ">
-              <div class="content-catering">	
-            	<div class ="pricing-table-header-img">
-            	<img src="/static/blog/images/package-2.jpg">
-                </div>
-                <div class="pricing-table-header">
-                    <h3>HOUSE PARTY PACKAGE</h3>
-                     <p class="text-right price"><b>Price :</b>$13.99/person</p>
-                </div>
-                <div class="pricing-table-features">
-                    <ul>
-						<li>1 Appetizer</li>
-						<li>1 Special Appetizer</li>
-						<li>2 Vegetables</li>
-						<li>1 Lentil</li>
-						<li>Roti/Paratha/Naan</li>
-						<li>Jeera Rice</li>
-						<li>Raita</li>
-						<li>House Salad</li>
-						<li>Dessert (Choose 1) </li>
-						<li>Rasmalai/Gulab Jamun/ Kheer</li>
-					</ul>
-                </div>
-               </div> 
-            </div>
-
-            <div class="col-md-4 tiny ">
-              <div class="content-catering">	
-            	<div class ="pricing-table-header-img">
-            	<img src="/static/blog/images/package-3.jpg">
-                </div>
-                <div class="pricing-table-header">
-                    <h3>ALL OCCASION</h3>
-                     <p class="text-right price"><b>Price :</b>$22.99/person</p>
-                </div>
-                <div class="pricing-table-features">
-					<ul>
-					  <li>2 Appetizers</li>
-					  <li>1 Special Appetizer</li>
-					  <li>3 Vegetables</li>
-					  <li>1 Lentil</li>
-					  <li>Assorted Breads</li>
-					  <li>1 Rice item</li>
-					  <li>Raita</li>
-					  <li>Salad</li>
-					  <li>Dessert (Choose 2)</li>
-					  <li>Rasmalai/Gulab Jamun/Kalakand/Barfi/</li>
-					</ul>
-                </div>
-
-            </div>
-          </div>
-         </div>
+    <!-- bradcam_area_start -->
+  <div class="bradcam_area breadcam_bg_1 overlay">
+    <h3>Catering</h3>
 </div>
+<div class="Catering-menu">
+<div class="container">
+<div class="tab-section">
+<h3>Catering Menu <br>
+(Jain Options, Vegan, Gluten-Free)
+</h3>
+
+    <div class="vertical-tabs">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#pag1" role="tab" aria-controls="home">Starters / Appetizers / Snacks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag2" role="tab" aria-controls="profile">Special Appetizers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag3" role="tab" aria-controls="messages">Vegetarian Entrees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag4" role="tab" aria-controls="settings">Breads</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag5" role="tab" aria-controls="settings">Indo-Chinese</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag6" role="tab" aria-controls="settings">Soup and Salads</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag7" role="tab" aria-controls="settings">Star Chaat Wraps</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag8" role="tab" aria-controls="profile">Tandoori Sizzlers (Kababs)
+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag9" role="tab" aria-controls="messages">Special Items
+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag10" role="tab" aria-controls="settings">South Indian Cuisine
+</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag11" role="tab" aria-controls="settings">Maharashtrian Indian Cuisine 
+</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag12" role="tab" aria-controls="settings">Refreshments & Beverages 
+</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#pag13" role="tab" aria-controls="settings">Desserts 
+</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="pag1" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+       <li><i class="fa fa-circle" aria-hidden="true"></i>Potato Peas Samosa – 2pc  </li>
+       <li><i class="fa fa-circle" aria-hidden="true"></i>Sprouts Bhel </li>  
+<li><i class="fa fa-circle" aria-hidden="true"></i>French Fries </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dahi Aloo Sev Poori</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bombay Vada – 2pc </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Sev Poori </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Papdi Chaat </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mix Veg Pakora </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dahi Vada/Bhalla  </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Pakora </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Pani Poori/Gol-Gappe </li>
+<li> <i class="fa fa-circle" aria-hidden="true"></i>Chilly Pakora  </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bombay Bhel Poori </li>
+<li> <i class="fa fa-circle" aria-hidden="true"></i>Papdi Masala Chaat </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Hari Bhari Bhel</li>
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+          </div>
+        </div>
+        <div class="tab-pane" id="pag2" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+       <li><i class="fa fa-circle" aria-hidden="true"></i>Spicy Misal Pav</li>
+       <li><i class="fa fa-circle" aria-hidden="true"></i>Gujrati Ragada Patties</li> 
+<li><i class="fa fa-circle" aria-hidden="true"></i>Usal Pav</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Crispy Chaat Basket</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Vada Pav – 1pc</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Haryali Kabab- 2pc</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>“Star Chaat Special” Burge</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Chana Samosa – 2pc</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bombay’s Masala Dabeli – 2pc</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Tikki With Chole – 2pc</li>
+                                                                               
+ 
+       </ul>
+          </div>
+        </div>
+        <div class="tab-pane" id="pag3" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+      <li><i class="fa fa-circle" aria-hidden="true"></i>Fresh Aloo Methi</li>
+       <li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Jeera Masala</li>  
+<li><i class="fa fa-circle" aria-hidden="true"></i>Shahi Aloo Gobi Matar</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Baingan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Palak Sabzi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Matter</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Shahi Dum Aloo</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Makhani (Signature Special)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Tikka Gravy</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Creamy Malai Kofta</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Fresh Masala Bhindi</li>
+<li> <i class="fa fa-circle" aria-hidden="true"></i>Bhartha Baingan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Patiala Shahi Mix Veg</li>
+<li> <i class="fa fa-circle" aria-hidden="true"></i>Creamy Veg Korma</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Saag Paneer</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Matter Paneer Lababdaar</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Indian Style Chilli Paneer</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Bhurji</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Chole Masala</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Punjabi Chana Saag</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Punjabi Rajmah</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Toor Dal</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Punjabi Tadka Dal</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Punjabi Dhaba Special ‘Dal Makhani’</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dal Palak</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Kadai Paneer</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Punjabi Kadhi Pakora</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Punjabi Tadka Saag</li> 
+
+    
+    </ul>
+          </div>
+        </div>
+        <div class="tab-pane" id="pag4" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+               
+<li><i class="fa fa-circle" aria-hidden="true"></i>Palak Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Methi Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Muli Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gobi Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Green-Veg Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Plain Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Tawa Roti (2pc)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Makki Di Roti</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Methi-Masala Roti</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Palak Puri (2pc)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>MethiPuri (2pc)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Puri (2pc)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bhatura (2pc)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Plain Naan / Butter Naan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Garlic Naan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Lachha Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Ajwain Paratha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Kulcha</li> 
+<li><i class="fa fa-circle" aria-hidden="true"></i>Onion Kulcha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Jeera Basmati Rice</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Kulcha</li> 
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mix-Veg Raita</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Tandoori Roti</li>
+
+       
+       </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="pag5" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Veg Chow Mein</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Veg Manchurian Dry/Gravy</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Baby Corn Manchurian</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Veg Schezwan Fried Rice</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gobi Manchurian Dry/Gravy</li>
+
+        </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="pag6" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Classic Tomato Soup</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Green salad</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Star Chaat Mix Veggie Soup</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Star Chaat Mango Olive Salad</li>
+       </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="pag7" role="tabpanel">
+          <div class="sv-tab-panel">
+           <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Tandoori Paneer Tikka Wrap</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Spicy Paneer Wrap (Plain/Spinach Paratha)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Paneer Bhurji Wrap (Plain/Spinach Paratha)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mix Veggie Wrap</li>            
+ 
+       </ul>
+          </div>
+        </div>
+        
+<div class="tab-pane" id="pag8" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Tandoori Paneer Tikka</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mix Vegetable grill</li> 
+  </ul>
+ </div>
+</div>        
+<div class="tab-pane" id="pag9" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Chole Bhature</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Puri</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Masala MethiPuri</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bombay Masala Pav Bhaji</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Makki Di Roti & Sarson Saag</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Ambarsari Naan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Moong Khichdi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Kadhi Chawal</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gujarati Dal</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mix Veg Biryani</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Indian Vegetable Rice</li>
+     
+  </ul>
+ </div>
+</div>
+<div class="tab-pane" id="pag9" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Chole Bhature</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Aloo Puri</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Masala MethiPuri</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bombay Masala Pav Bhaji</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Makki Di Roti & Sarson Saag</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Ambarsari Naan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Moong Khichdi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Kadhi Chawal</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gujarati Dal</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mix Veg Biryani</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Indian Vegetable Rice</li>
+     
+  </ul>
+ </div>
+</div>        
+
+<div class="tab-pane" id="pag10" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Idli Sambhar</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Plain Dosa</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Masala Dosa</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mysoor Masala Dosa</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Rava Onion Dosa</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Uttapam</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Moong Khichdi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Curd Rice</li>
+  </ul>
+ </div>
+</div>
+
+<div class="tab-pane" id="pag11" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Kanda Poha</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Sabudana Khichdi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>ShrikhandPuri</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Shrikhand</li>
+   </ul>
+ </div>
+</div>
+
+<div class="tab-pane" id="pag12" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Masala Chai</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Indian Coffee</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Soda</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mint Chaas</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Mango Lassi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gulab Lassi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Badam Milk</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Faluda Drink</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Coke/Diet Coke/Fanta/Sprite/Lemonade</li>
+   </ul>
+ </div>
+</div>
+        
+<div class="tab-pane" id="pag13" role="tabpanel">
+   <div class="sv-tab-panel">
+    <ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Kulfi - Mango/Malai/Kesar/Pista</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Faluda Kulfi</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Kheer</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Rasmalai</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gulab Jamun</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Gajjar Halwa</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Moong Dal Halwa</li>
+
+   </ul>
+ </div>
+</div>
+
+
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+<div class="catering-details">
+<div class="container">
+<div class="row">
+<div class="col-sm-5">
+<div class="detail-cat">
+<h3>catering feasts</h3>
+<div class="box-cate">
+<h4>feasts- 1</h4>
+<h5>$9.99 per person</h5>
+<ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries (2)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Lentil (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Jeera Rice</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Roti/Paratha/Naan</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Raita</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Homemade Salad</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dessert (Rasmalai/Gulab Jamun/Kheer)</li>
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>feasts- 2</h4>
+<h5>$12.99 per person</h5>
+<ul>
+       <li><i class="fa fa-circle" aria-hidden="true"></i>Appetizers (2)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Special Appetizers (2)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Exotic Refreshments (Tea/Mint Chaas)</li>
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>feasts- 3</h4>
+<h5>$14.99 per person</h5>
+<ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Appetizers (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Special Appetizers (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Chole Bhature</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Select One 
+-Bombay Masala Pav Bhaji/Makki Di Roti & Sarson Da Saag/Spicy Paneer </li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dessert (Rasmalai/Gulab Jamun/Kheer)</li>
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>feasts- 4</h4>
+<h5>$14.99 per person</h5>
+<ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Appetizers (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Sizzler (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries (2)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Lentil (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bread (Tandoori/Tawa)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Basmati Jeera Rice</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Raita</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Homemade Salad</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dessert (Rasmalai/Gulab Jamun/Kheer)</li>
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>feasts- 5</h4>
+<h5>$13.99 per person</h5>
+<ul>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Appetizers (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Special Appetizers (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries (2)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Lentil (1)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Bread (Roti/Plain Paratha/Plain Naan/Butter Naan)</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Basmati Jeera Rice</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Raita</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Homemade Salad</li>
+<li><i class="fa fa-circle" aria-hidden="true"></i>Dessert (Rasmalai/Gulab Jamun/Kheer)</li>
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+
+
+</div>
+</div>
+<div class="col-sm-7">
+<div class="detail-cat" style="border:none;">
+<h3>catering Trays</h3>
+<div class="box-cate">
+<h4>Tray- 1</h4>
+<h5>Quarter Tray</h5>
+<ul>
+     
+
+    
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries            <span>  $25</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Lentils                    <span>  $20</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Pakora                   <span>$20</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Manchurian                 <span>$30</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Biryani & Raita              <span>  $30 </span> </li>   
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>Tray- 2</h4>
+<h5>Half Tray</h5>
+<ul>
+   <li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries           <span>  $50</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Lentils                    <span>  $40</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Pakora                   <span>$40</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Manchurian                 <span>$60</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Biryani & Raita              <span>  $60 </span> </li> 
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>Tray- 3</h4>
+<h5>MediumTray</h5>
+<ul>
+   <li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries           <span>  $75</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Lentils                    <span>  $60</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Pakora                   <span>$60</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Manchurian                 <span>$90</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Biryani & Raita              <span>  $90 </span> </li> 
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+<div class="box-cate">
+<h4>Tray- 4</h4>
+<h5>Full Tray</h5>
+<ul>
+ <li><i class="fa fa-circle" aria-hidden="true"></i>Vegetable Curries           <span>  $100</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Lentils                    <span>  $80</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Pakora                   <span>$80</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Manchurian                 <span>$120</span></li>
+  <li><i class="fa fa-circle" aria-hidden="true"></i>Biryani & Raita              <span>  $120 </span>  </li> 
+
+    
+          
+
+                                                                                            
+ 
+       </ul>
+</div>
+
+
+<div class="box-cate">
+<div class="offer-box">
+<div class="under-box">
+<h3>Personalize Your 
+Order</h3>
+<p>Create your own feast by selecting from <span style="color:#ca0808">Catering Feasts</span> Menu. </p>
+<p>
+
+For more information please contact or mail us at </p>
+<div class="contact-info">
+<ul>
+<li><a href="tel:+1 510-513-9700"><span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>+1 510-513-9700 , +1 925-404-7700</a></li> 
+<li><a href="mailto:customerservice.starchaat@gmail.com"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>customerservice.starchaat@gmail.com</a></li> 
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="offer-section">
+<div class="container">
+<h3>Our Service Charges</h3>
+<div class="box-head">Live Catering Charges</div>
+<div class="row">
+
+<div class="col-sm-6 col-lg-4">
+<div class="coupon">
+<div class="bord">
+<h4>For food minimum is <span>$500 + </span>Service Charges + Equipment Charges</h4>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4">
+<div class="coupon">
+<div class="bord">
+<h4>For Chef up to 3 Hours is minimum <span>$200</span> </h4>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4">
+<div class="coupon">
+<div class="bord">
+<h4>For Grill & Tandoor is <span>$200</span></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="box-head" style="margin-top:40px;">Delivery</div>
+<div class="row">
+
+<div class="col-sm-6 col-lg-4">
+<div class="coupon">
+<div class="bord">
+<h4>For food minimum is Service Charges + Equipment Charges
+
+Within 10 miles <span>$20 </span> after<span> $2 </span> per extra mile
+<br>
+
+Buffet Setup charges <span>$50 </span></h4>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4">
+<div class="coupon">
+<div class="bord">
+<h4>Chaffing Dish with Serving Spoon and Burner <span>$10 </span>per Dish </h4>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4">
+<div class="coupon">
+<div class="bord">
+<h4>Disposable Cutlery and China Ware (Plates, Spoons, Forks, Napkins, Teacup and Dessert bowls)
+</h4>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<!-- bradcam_area_end -->
 
 
 {% endblock content %}

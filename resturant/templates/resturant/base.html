@@ -1,153 +1,219 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>STAR CHAAT CUISINE</title>
-<!-- bootstrap-css -->
-<link href="{% static 'blog/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstrap-css -->
-<!-- css -->
-<link rel="stylesheet" href="{% static 'blog/css/style.css' %}" type="text/css" media="all" />
-<!--// css -->
-<link rel="stylesheet" href="{% static 'blog/css/owl.carousel.css' %}" type="text/css" media="all">
-<link href="{% static 'blog/css/owl.theme.css' %}" rel="stylesheet">
-<!-- font-awesome icons -->
-<link href="{% static 'blog/css/font-awesome.css' %}" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-  <script src="{% static 'blog/js/jquery-1.11.1.min.js' %}"></script>
-    <script src="{% static 'blog/js/bootstrap.js' %}"></script>
-  <script src="{% static 'blog/js/SmoothScroll.min.js' %}"></script>
-<!-- font -->
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!-- //font -->
+<!doctype html>
+<html class="no-js" lang="zxx">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>star chaat cuisine</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet"> 
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'blog/img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'blog/css/responsive.css' %}"> -->
 </head>
-<body {% if body_class %} class = '{{body_class}}' {% endif %}>
-  <!-- banner -->
-  <div class="banner">
-    <!--header-->
-    <div class="header">
-      <div class="logo">
-        <h1><a href="/">STAR CHAAT CUISINE</a></h1>
-      </div>
-      <div class="top-nav">
-        <span class="menu"><img src="{% static 'blog/images/menu.png' %}" alt=""/></span>
-        <ul>
-          <li><a class="active" href="{% url 'resturant-home' %}">Home</a></li>
-          <li><a href="{% url 'resturant-about' %}">About</a></li>         
-          <li><a href="{% url 'resturant-menu' %}">Menu</a></li>
-          <li><a href="{% url 'resturant-catering' %}">Catering</a></li>
-          <li><a href="{% url 'resturant-gallery' %}">Gallery</a></li>
-          <li><a href="{% url 'resturant-contact' %}">Contact</a></li>
-        </ul>
-        <!-- script-for-menu -->
-        <script>          
-          $("span.menu").click(function(){
-            $(".top-nav ul").slideToggle("slow" , function(){
-            });
-          });
-        </script>
-        <!-- script-for-menu -->
-      </div>
-        <div class="clearfix"> </div>
-    </div>  
-    <!--//header-->
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+  <header>
+            <div class="header-area ">
+                <div id="sticky-header" class="main-header-area sticky">
+                    <div class="container-fluid p-0">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav style="float:right;">
+                                        <ul id="navigation">
+                                            <li><a href="/">home</a></li>
+                      <li><a class="" href="/about">About</a></li>
+                                            <li><a href="/menu">Menu</a></li>
+                      <div class="d-desk-none">
+                       <li><a href="/catering">Catering</a></li>
+                      <li><a class="" href="/gallery">Gallery</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                      </div>
+                                            
+                                          
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="logo-img">
+                                    <a href="/">
+                                        <img src="{% static 'blog/img/logo.png' %}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 d-none d-lg-block">
+              <div class="main-menu  d-none d-lg-block">
+              <nav>
+                                        <ul>
+                                            <li><a href="/catering">Catering</a></li>
+                      <li><a  href="/gallery">Gallery</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            
+                                          
+                                        </ul>
+                                    </nav>
+                  </div>
+                                
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none">
+                
+                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- header-end -->
              {% block content %}{% endblock %}
 
-  <!-- footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="agile-footer-grids">
-        <div class="col-md-3 agile-footer-grid">
-          <img src="{% static 'blog/images/logo.jpg' %}" alt="staar-chaat-cuisine-logo" class = "logo-img"/>
 
-        </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_logo text-center ">
+                              <img src="{% static 'blog/img/logo.png' %}">
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-lg-4" style="margin: 0px auto;">
+                            <div class="footer_widget text-center " >
+                                <h3 class="footer_title pos_margin">
+                                   OPENING HOURS
+                                </h3>
+                              <div class="textwidget custom-html-widget" style="white-space:nowrap;">Mon - Thur : .... 11.30am - 10pm<br>
+Friday : .... 11.30am - 10pm<br>
+Saturday : .... 11.30am - 10pm<br>
+Sunday : .... 11.30am - 10pm</div>
+    
+                            </div>
+                        </div>
+                        <div <div class="col-xl-3 col-md-4 col-lg-3" style="margin: 0px auto;">
+                             
+                                <div class="footer_widget">
+                                        <h3 class="footer_title">
+                                                catering
+                                        </h3>
+                                        <div class="textwidget custom-html-widget" style="white-space:nowrap;">Phone: <a href="tel:+1 510-513-9700
+">+1 510-513-9700 , +1 925-404-7700
+</a><br>
 
-        <div class="col-md-3 agile-footer-grid">
-          <h4>About Star Chaat Cuisine</h4>
-          <p><b>STAR CHAAT CUISINE</b> is an Indian restaurant located in the Dublin, California</p>
-          <a href="{% url 'resturant-about' %}" class="btn btn-hero btn-medium" role="button">Read More</a>
-        </div>
-
-        <div class="col-md-3 agile-footer-grid">
-          <h4>Popular Items</h4>
-          <div class="popular-grids">
-            <div class="popular-grid">
-              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s1.jpg' %}" alt="" /></a>
+Email: <a href="mailto:customerservice.starchaat@gmail.com">customerservice.starchaat@gmail.com</a><br>
+</div>
+                                    </div>
+                        </div>
+             <div class="col-xl-3 col-md-6 col-lg-3" style="margin: 0px auto;">
+                                <div class="footer_widget" style="float:right;" >
+                                        <h3 class="footer_title">
+                                                contact: Dublin
+                                        </h3>
+                                       <div class="textwidget custom-html-widget">4930 Dublin Blvd #800,<br>
+Dublin, CA 94568,<br>
+United States</div>
+                                    </div>
+                        </div>
+                    </div>
+                  
+                </div>
             </div>
-            <div class="popular-grid">
-              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s2.jpg' %}" alt="" /></a>
-            </div>
-            <div class="popular-grid">
-              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s3.jpg' %}" alt="" /></a>
-            </div>
-            <div class="clearfix"> </div>
-          </div>
-          <div class="popular-grids">
-            <div class="popular-grid">
-              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s5.jpg' %}" alt="" /></a>
-            </div>
-            <div class="popular-grid">
-              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s6.jpg' %}" alt="" /></a>
-            </div>
-            <div class="popular-grid">
-              <a href="{% url 'resturant-gallery' %}"><img src="{% static 'blog/images/s7.jpg' %}" alt="" /></a>
-            </div>
-            <div class="clearfix"> </div>
-          </div>
-        </div>
-        <div class="col-md-3 agile-footer-grid">
-          <h5>Get In Touch<h5>
-          <div class="agileinfo-social-grids">
-            <ul>
-              <li><a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-circled.png"></a></li>
-              <li><a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"></a></li>
-              <li><a href="#"><img src="https://img.icons8.com/office/48/000000/instagram-new.png"></a></li>
-              <li><a href="#"><img src="https://img.icons8.com/color/48/000000/youtube.png"></a></li>
-            </ul>
-            <a href="{% url 'resturant-contact' %}" class="btn btn-hero btn-medium" role="button">Contact Us</a>
-          </div>
-        </div>
-        <div class="clearfix"> </div>
-      </div>
-    </div>
+      <div class="social-bottom">
+        <h4 class="widget-title">Follow us On</h4>
+    <ul class="social-nav">
+        <li><a href="https://www.facebook.com/" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank" title="Twitter" rel="nofollow" class="twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" target="_blank" title="Insta" rel="nofollow" class="google"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" title="Youtube" rel="nofollow" class="linkedin"><i class="fa fa-youtube"></i></a></li>       
+    </ul>
   </div>
-  <!-- //footer -->
-  <!-- agileits-copyright -->
-  <div class="agileits-copyright">
-    <div class="container">
-      <p>© 2019 Star Chaat Cuisine. All rights reserved</p>
-    </div>
-  </div>
+            <div class="copy-right_text">
+                <div class="container">
+                   
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                  © 2020 Star Chaat Cuisine, All rights reserved. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-    <!-- //agileits-copyright -->
-  <script src="{% static 'blog/js/owl.carousel.js' %}"></script>  
-  <script>
-  $(document).ready(function() { 
-    $("#owl-demo").owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
-      autoPlay:true,
-      items : 4,
-      itemsDesktop : [640,5],
-      itemsDesktopSmall : [414,4]
- 
-    }); 
-  });
+    <!-- JS here -->
+    <script src="{% static 'blog/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'blog/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'blog/js/popper.min.js' %}"></script>
+    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blog/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'blog/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'blog/js/ajax-form.js' %}"></script>
+    <script src="{% static 'blog/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'blog/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'blog/js/scrollIt.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'blog/js/wow.min.js' %}"></script>
+    <script src="{% static 'blog/js/nice-select.min.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'blog/js/plugins.js' %}"></script>
 
- /* $(function(){
-    var current = location.pathname;
-    $('.top-nav li a').each(function(){
-        var $this = $(this);
-        console.log($this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-        }
-    })
-}) */
-  </script>
-</body> 
+    <!--contact js-->
+    <script src="{% static 'blog/js/contact.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.form.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'blog/js/mail-script.js' %}"></script>
+
+    <script src="{% static 'blog/js/main.js' %}"></script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
 </html>

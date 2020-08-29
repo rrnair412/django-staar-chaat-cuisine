@@ -84,6 +84,16 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'starchaat',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -122,7 +132,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, '/aman work/starchaatcuisine/django/static')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STATIFILES_DIR = ( os.path.join(BASE_DIR,'assets') , )
+
+
+# Email config
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER='customerservice.starchaat@gmail.com'
+EMAIL_HOST_PASSWORD='41235219528'
+EMAIL_USE_TLS=True 

@@ -1,77 +1,180 @@
 {% extends "resturant/base.html" %}
+{% load static %}
 {% block content %}
-  <div class="about-heading">
-      <h2>Gallery</h2>
-  </div>
-<div class="slider">
-  <input type="radio" name="slide_switch" id="id1"/>
-  <label for="id1">
-    <img src="/static/blog/images/g.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g.jpg"/>
-  
-  <!--Lets show the second image by default on page load-->
-  <input type="radio" name="slide_switch" id="id2" checked="checked"/>
-  <label for="id2">
-    <img src="/static/blog/images/g1.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g1.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id3"/>
-  <label for="id3">
-    <img src="/static/blog/images/g2.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g2.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id4"/>
-  <label for="id4">
-    <img src="/static/blog/images/g3.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g3.jpg"/>
-  
-  <input type="radio" name="slide_switch" id="id5"/>
-  <label for="id5">
-    <img src="/static/blog/images/g4.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g4.jpg"/>
 
-    <input type="radio" name="slide_switch" id="id6"/>
-  <label for="id6">
-    <img src="/static/blog/images/g5.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g5.jpg"/>
-
-    <input type="radio" name="slide_switch" id="id7"/>
-  <label for="id7">
-    <img src="/static/blog/images/g6.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g6.jpg"/>
-
-      <input type="radio" name="slide_switch" id="id8"/>
-  <label for="id8">
-    <img src="/static/blog/images/g7.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g7.jpg"/>
-
-      <input type="radio" name="slide_switch" id="id9"/>
-  <label for="id9">
-    <img src="/static/blog/images/g8.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g8.jpg"/>
-
-      <input type="radio" name="slide_switch" id="id10"/>
-  <label for="id10">
-    <img src="/static/blog/images/g9.jpg" width="100"/>
-  </label>
-  <img src="/static/blog/images/g9.jpg"/>
-
-
+    <!-- bradcam_area_start -->
+  <div class="bradcam_area breadcam_bg_1 overlay">
+    <h3>Gallery</h3>
 </div>
 
-<!-- We will use PrefixFree - a script that takes care of CSS3 vendor prefixes
-You can download it from http://leaverou.github.com/prefixfree/ -->
-<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+   <!-- gallery_start -->
+    <div class="gallery_area">
+  <div class="container">
+  <div class="row">
+         <div class="col-sm-4">
+            <div class="single_gallery big_img">
+      
+                    <a class="popup-image" href="{% static 'blog/img/Aloo_vada.jpg' %}">
+                        <i class="ti-plus"></i>
+                    </a>
+                <img src="{% static 'blog/img/Aloo_vada.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Aloo Vada</h3>
+        <p>Indulge Yourself in The Taste of flavored Mashed Potato Dumplings Served with Chutneys</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="single_gallery small_img">
+                <a class="popup-image" href="{% static 'blog/img/Dahi-Bhalla.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/Dahi-Bhalla.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Dahi Vada/Bhalla</h3>
+        <p>Soft Fried Lentil Dumplings Topped With Chilled Yogurt, Potato, Onion, Crispy Wafers And Chutneys</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="single_gallery small_img">
+                <a class="popup-image" href="{% static 'blog/img/chowmain.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/chowmain.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Veg Chow Mein</h3>
+        <p>Made with stir-fried cabbage, carrots, green-onions mixed with chow Mein noodles in a savory sauce</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+    
+            <div class="single_gallery small_img">
+                <a class="popup-image" href="{% static 'blog/img/Veg_manchurian.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/Veg_manchurian.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Vegetarian Manchurian Dry/Gravy</h3>
+        <p>Palatable and Satiating  dish of mixed vegetable dumplings in a glossy, rich-brown chef’s special sauce with bold notes...</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="single_gallery small_img">
+                <a class="popup-image" href="{% static 'blog/img/idly_sambar.jpg' %}">
+                    <i class="ti-plus"></i>
+        
+                </a>
+                <img src="{% static 'blog/img/idly_sambar.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Idly Sambar</h3>
+        <p>Savory Rice Cakes Served With Lentil-based Vegetable Stew or Chowder, Cooked With Dal and Tamarind.</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="single_gallery big_img">
+                <a class="popup-image" href="{% static 'blog/img/chole-bhture.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/chole-bhture.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Chole Bhature</h3>
+        <p>Soft and puffy fried leavened bread served with spiced tangy gravy of chick-peas; comes with onions and pickles on the side.</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+       
+    <div class="single_gallery small_img">
+                <a class="popup-image" href="{% static 'blog/img/veg-biryani.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/veg-biryani.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Mix-Veggie Biryani</h3>
+        <p>A healthy and delicious assortment of vegetables and rice-layers of aromatic long grain basmati rice and mixed vegetables; Served with cucumber raita.</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="single_gallery small_img">
+                <a class="popup-image" href="{% static 'blog/img/shahi_dum_aloo.jpg' %}">
+                    <i class="ti-plus"></i>
+        
+                </a>
+                <img src="{% static 'blog/img/shahi_dum_aloo.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Shahi Dum Aloo</h3>
+        <p>Delicious and Creamy dish of potatoes stuffed with mixture of ground dry-fruits in spicy onion-tomato and yogurt gravy.</p>
+        </div>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="single_gallery big_img">
+                <a class="popup-image" href="{% static 'blog/img/aloo_paratha.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/aloo_paratha.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Aloo Paratha</h3>
+        <p>Pan-fried Whole Wheat Bread, Stuffed With Spiced Mashed Potatoes and cilantro.</p>
+        </div>
+            </div>
+        </div>
+    <div class="col-sm-4">
+            <div class="single_gallery big_img">
+                <a class="popup-image" href="{% static 'blog/img/papdi_chaat.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/papdi_chaat.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Papdi Chaat</h3>
+        <p>Yummy Snack Assorted With a Crunchy Base of ‘Papdi’ (crisp pooris), topped with lip-smacking chutneys, veggies and curd.</p>
+        </div>
+            </div>
+        </div>
+    <div class="col-sm-4">
+            <div class="single_gallery big_img">
+                <a class="popup-image" href="{% static 'blog/img/gulab_lassi.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/gulab_lassi.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Gulab Lassi</h3>
+        <p>Rose Flavored Refreshing Classical Indian Yogurt Drink.</p>
+        </div>
+            </div>
+        </div>
+    <div class="col-sm-4">
+            <div class="single_gallery big_img">
+                <a class="popup-image" href="{% static 'blog/img/gajjar_halwa.jpg' %}">
+                    <i class="ti-plus"></i>
+                </a>
+                <img src="{% static 'blog/img/gajjar_halwa.jpg' %}" alt="">
+        <div class="desc">
+        <h3>Gajjar Halwa</h3>
+        <p>A Delicious Indian Dessert Made With Grated Carrots, Whole Milk(Khoya), Dried Fruits And Nuts</p>
+        </div>
+            </div>
+        </div>
+    </div>
+    
+    <ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
 
+     </div>
+    </div>
+
+   
+<!-- bradcam_area_end -->
 {% endblock content %}
 
 

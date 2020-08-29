@@ -1,829 +1,953 @@
 {% extends "resturant/base.html" %}
+{% load static %}
 {% block content %}
-		<div class="about-heading">
-			<h2>Menu</h2>
-		</div>
-	</div>
-	<!-- //banner -->
-	<!-- Menu -->
-      <div class="row menu-items">
-        <p class="text-center course-heading">Appetizers</p>
-        <div class="col-md-4">
-          <h3>Potato Peas Samosa</h3>
-          <p>Crispy Fried Dumplings, Spiced Potatoes And Peas Served With Chutney </p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-
-        </div>
-         <div class="col-md-4">
-          <h3>French Fries</h3>
-          <p>Long, Thin Pieces Of Potato That Are Fried and Served With Ketchup</p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Bombay Vada Pav</h3>
-          <p>Spiced Potato Ball Sandwiched Between Two Slices Of Pav Served With Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div> 
-
-        <div class="col-md-4">
-          <h3>Batata Vada</h3>
-          <p>Spiced Potato Balls Served With Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Vegie Burger</h3>
-          <p>Burger Served With Potato Fries And Choice Of Soda</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Dabeli</h3>
-          <p>Potato Mixture Filled Into A Pav And Topped With Onion, Pomegranate, Cilantro, Peanuts And Sev</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Dahi Papdi Chaat</h3>
-          <p>Crispy Wafers Layered With Potato, Sev, Onion, Sprouts, Chutney, Yogurt, Chickpeas And Spices</p>
-        <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Dahi Bhalla</h3>
-          <!--<img src="/static/blog/images/dahi-bhalla.jpg" class="menu-image"> -->
-          <p>Soft Fried Lentil Dumplings Topped With Chilled Yogurt, Potato, Onion, Crispy Wafers And Chutneys </p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Pani Poori</h3>
-          <p>Crispy Puffed Wafers Served With Spicy Mint Water, Chutneys, Potatoes, Onion, Sprouts And Chickpeas</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Bhel Poori</h3>
-          <p>Puffed Rice Mixed With Crispy Wafers, Chickpeas, Potato, Sprouts, Onion, Sev And Chutneys</p>
-        <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Hara Bhara Bhel</h3>
-          <p>Puffed Rice Mixed With Cucumber, Tomato, Crispy Wafers, Chickpeas, Potato, Sprouts, Onion, Sev And Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Sprouts Bhel</h3>
-          <p>Sprouts Lentil Tossed With Potato, Onion, Sev, Tomato, Cucumber, Chickpeas And Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                                <div class="col-md-4">
-          <h3>Dahi Bateta Sev Poori</h3>
-          <p>Round Crispy Puffed Wafers Stuffed With Sprouts, Potatoes, Yogurt, Onion, Chickpeas And Chutney Sprinkled With Sev</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                                <div class="col-md-4">
-          <h3>Sev Poori</h3>
-          <p>Round Crispy Puffed Wafers Stuffed With Sprouts, Potatoes, Onion, Chickpeas And Chutney Sprinkled With Sev</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Masala Chaat</h3>
-          <p>Crispy Wafers Layered With Potato, Cucumber, Sprouts, Tomato, Sev, Onion, Chutney, Chickpeas And Spices</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Chaat Basket</h3>
-          <p>Basket Shaped Wafer Stuffed With Potato, Cucumber, Sprouts, Tomato, Onion, Chutney, Chickpeas And Sprinkled With Sev</p>
-          <p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Hara Bhara Kabab</h3>
-          <p>Vegetables Patties Made With Spinach, Ginger, Potato, Broccoli And Spices Served With Yogurt And Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Chaat Samosa</h3>
-          <p>Crispy Fried Dumplings Served With Garbanzo Curry, Topping With Chutneys And Onion </p>
-          <p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Aloo Tikki With Chana</h3>
-          <p>Potato Patty Served With Garbanzo Curry, Topping With Onion And Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Pakoras - ( Mix Veg /Paneer /Chili )</h3>
-          <p>Deep Fried Chickpea Flour Batter Fritters Served With Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Usal Pav</h3>
-          <p>Green Peas Curry Served With Pav, Onions, Garlic Chutney And Green Chilies</p>
-          <p class="text-right price"><b>Price :</b>$7.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Misal Pav</h3>
-          <p>Sprouted Moth Beans Topped With Onion, Cilantro, Served With Lemon And Toasted Pav</p>
-          <p class="text-right price"><b>Price :</b>$7.99</p>
-        </div>
-
-                                <div class="col-md-4">
-          <h3>Ragada Pattice</h3>
-          <p>Peas Cooked With Special Indian Sauce Served With Mashed Potato Patties And 
-Chutneys </p>
-<p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-
-      </div>
-
-      <div class="row menu-items">
-        <p class="text-center course-heading">Vegetables Entrees</p>
-        <div class="col-md-4">
-          <h3>Fresh Aloo Methi</h3>
-          <p>Potatoes And Fresh Fenugreek Leaves Cooked With Herbs And Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Aloo Jeera Masala</h3>
-          <p>Potatoes Cooked With Royal Cumin, Ginger, Garlic And Spices</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Aloo Gobi Mattar / Aloo Gobi</h3>
-          <p>Cauliflower Cooked With Potatoes, Peas And Seasoned Spices </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Aloo Baigan</h3>
-          <p>Eggplant And Potatoes Cooked Together In House Special Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Aloo Palak</h3>
-          <p>Potatoes Cooked With Fresh Spinach Seasoned With Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Shahi Dum Aloo</h3>
-          <p>Stuffed Potatoes Cooked In An Onion Gravy With Special Spices </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Veg N Chaat Cuisine (Signature Dish)</h3>
-          <p>Garden Vegetables, Coconut Milk, Curry Leaves</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Malai Paneer</h3>
-          <p>Home Made Cheese Cooked With Onion Gravy In Special Creamy Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Paneer Tikka Masala</h3>
-          <p>Home Made Cheese Cooked With Ginger, Garlic, Spring Onion And Special Creamy Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Malai Kofta</h3>
-          <p>Vegetable Dumplings Cooked With Herbs And Spices In A Creamy Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-         <div class="col-md-4">
-          <h3>Aloo Asparagus</h3>
-          <p>Potatoes And Asparagus Cooked Together In House Special Spices</p>
-          <p class="text-right price"><b>Price :</b>$10.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Masala Bhindi</h3>
-          <p>Fresh Okra Tossed With Onion, Ginger, Garlic, Tomatoes And Special Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Baigan Bhartha / Bhartha Paneer</h3>
-          <p>Fresh Eggplant Baked And Cooked With Traditional Indian Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Mix Veg Sabji</h3>
-          <p>Fresh Mixed Vegetables Cooked With Ginger, Garlic, Tomato And Spices </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Mix Veg Korma</h3>
-          <p>Fresh Mix Vegetables Cooked In A Special Creamy Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Saag Paneer</h3>
-          <p>Garden Fresh Spinach And Mustard Cooked With Ginger, Garlic, Onion, Tomato With Home Made Cheese </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Matter Paneer</h3>
-          <p>Home Made Cheese Cooked In Onion Gravy With Green Peas</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Chilli Paneer</h3>
-          <p>Home Made Cheese Cooked With Bell Pepper, Ginger, Garlic, Onion, Tomatoes In House Special Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Paneer Bhurji</h3>
-          <p>Cottage Cheese Cooked With Ginger, Garlic, Tomato, Peas And Traditional Indian Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Chana Masala</h3>
-          <p>White Chickpeas Cooked With Onion, Tomatoes, Indian Spices And Garnished With Fresh Cilantro</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Chana Saag</h3>
-          <p>Fresh Chopped Spinach Cooked With Garbanzo Beans</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Punjabi Rajmah</h3>
-          <p>Red Kidney Beans Cooked In Traditional Indian Spices</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Toor Ki Dal</h3>
-          <p>Yellow Lentil Soup Cooked With Curry Leaves, Dry Whole Red Chillies In Traditional Indian Spices</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Tadka Dal</h3>
-          <p>Traditional North Indian Style Yellow Lentil Tempered With Onion, Ginger, Garlic And Special Spices</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Dal Makhni</h3>
-          <p>Traditional Black Lentils Simmered On Low Fire With Tomato, Red Chillies, Ginger And Garlic </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                                <div class="col-md-4">
-          <h3>Spinach Dal</h3>
-          <p>Yellow Lentils Cooked With Fresh Spinach And Traditional Indian Spices </p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                                <div class="col-md-4">
-          <h3>Kadhi Pakora</h3>
-          <p>Chickpea Flour And Yogurt Based Traditional Indian Curry With Mix Veg</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                                <div class="col-md-4">
-          <h3>Punjabi Tadka Saag</h3>
-          <p>Garden Fresh Spinach And Mustard Cooked With Ginger, Garlic, Onion,
-Tomato With Special Punjabi Tadka</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-      </div>
-
-      <div class="row menu-items">
-        <p class="text-center course-heading">Breads</p>
-        <div class="col-md-4">
-          <h3>Spinach Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread Stuffed With Fresh Spinach And Special Mixtures Of Spices</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Methi Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread Stuffed With Fenugreek And Special Mixtures 
-Of Spices</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Aloo Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread Stuffed With Spiced Mashed Potatoes And Herbs </p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Mulli Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread Stuffed With Grated Radish And Spices</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Gobi Paratha</h3>
-          <p>Cauliflower Minced With Special Spices Stuffed In Whole Wheat Flour</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Hara Bhara Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread Stuffed With A Mix Of Spiced Vegetables</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Paneer Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread Stuffed With Home Made Cheese, Onions And Special Mixtures Of Spices</p>
-          <p class="text-right price"><b>Price :</b>$4.49</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Plain Paratha</h3>
-          <p>Pan Cooked Whole Wheat Bread</p>
-          <p class="text-right price"><b>Price :</b>$2.49</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Tawa Roti (2)</h3>
-          <p>Traditional Whole Wheat Indian Bread</p>
-          <p class="text-right price"><b>Price :</b>$1.49</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Makki Di Roti</h3>
-          <p>Pan Cooked Corn Flour Flat Bread </p>
-          <p class="text-right price"><b>Price :</b>$1.49</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Masala Roti</h3>
-          <p>Traditional Whole Wheat Indian Bread With Spices </p>
-          <p class="text-right price"><b>Price :</b>$2.49</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Spinach Poori (2)</h3>
-          <p>Puffed Deep Fried Whole Wheat Bread With Spinach</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Methi Poori (2)</h3>
-          <p>Puffed Deep Fried Whole Wheat Bread With Fenugreek</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Poori (2)</h3>
-          <p>Puffed Deep Fried Whole Wheat Bread </p>
-          <p class="text-right price"><b>Price :</b>$2.49</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Bhatura (2)</h3>
-          <p>Puffed Leavened Deep Fried Bread</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Plain Naan / Butter Naan</h3>
-          <p>White Flour Bread Baked In Charcoal Fired Clay Oven </p>
-          <p class="text-right price"><b>Price :</b>$2.49</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Garlic Naan</h3>
-          <p>Clay Oven Leavened Bread With Garlic And Herbs</p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Chilli Thyme Naan</h3>
-          <p>Leavened Bread With Chili, Thyme And Spices</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Pesto Naan</h3>
-          <p>Leavened Bread With Basil Pesto And Parmesan</p>
-          <p class="text-right price"><b>Price :</b>$4.49</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Lacha / Ajwain Paratha</h3>
-          <p>Flaky And Layered Whole Wheat Bread </p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Kulcha (Potato / Onion)</h3>
-          <p>Leavened Clay Oven Bread Stuffed With Choice Of Filling And Herbs</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Tandoori Roti</h3>
-          <p>Traditional Whole Wheat Indian Bread Made In Clay Oven </p>
-          <p class="text-right price"><b>Price :</b>$2.49</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Bread Basket</h3>
-          <p>Butter Naan, Garlic Naan And Lacha Paratha </p>
-          <p class="text-right price"><b>Price :</b>$8.49</p>
-        </div>
-                                <div class="col-md-4">
-          <h3>Jeera Rice</h3>
-          <p>Steamed Basmati Rice With Cumin</p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>
-                                <div class="col-md-4">
-          <h3>Raita</h3>
-          <p>Yogurt With Carrot, Cucumber, Potatoes And Special Spices</p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>                        
-        <div class="col-md-4">
-          <h3>Roasted Papadum</h3>
-          <p>Roasted Punjabi Lentil Crackers Served With Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$1.99</p>
-        </div>
-
-      </div>
-
-            <div class="row menu-items">
-        <p class="text-center course-heading">Indo-Chinese</p>
-        <div class="col-md-4">
-          <h3>Veg Manchurian Dry</h3>
-          <p>Crispy Mixed Veg Bowl With Green Onion, Soy, Garlic And Chef Special Manchurian Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Veg Manchurian Gravy</h3>
-          <p>Crispy Mixed Veg Bowl With Veg N Chaat Cuisine Special Gravy </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Gobi Manchurian Dry</h3>
-          <p>Crispy Cauliflower Florets, Green Onion, Soy, Garlic And Chef Special Manchurian Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Gobi Manchurian Gravy</h3>
-          <p>Crispy Cauliflower Florets With Veg N Chaat Cuisine Special Gravy</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Baby Corn Manchurian</h3>
-          <p>Batter Fried Baby Corn Tossed In Chef Special Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Fried Rice</h3>
-          <p>The Classical Basmati Rice Tossed With Assortment Green Vegetables </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Schezwan Fried Rice</h3>
-          <p>The Classical Basmati Rice Tossed With Assortment Green Vegetables And 
-Chef Special Schezwan Sauce</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Hakka Noodle</h3>
-          <p>Noodles Tossed With An Assortment Of Shredded Vegetables And Soya Sauce</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-                        <div class="col-md-4">
-          <h3>Schezwan Noodle</h3>
-          <p>Noodles Tossed With An Assortment Of Shredded Vegetables And Chef Special Schezwan Sauce</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-      </div>
-
-      <div class="row menu-items">
-        <p class="text-center course-heading">Soups And Salads</p>
-        <div class="col-md-4">
-          <h3>Fresh Tomato Soup</h3>
-          <p>Veg N Chaat Cuisine Fresh Tomato Soup</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Veg Manchow Soup</h3>
-          <p>Chinese Style Thick Soup Topped With Crispy Fried Noodles </p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Green Salad</h3>
-          <p>Fresh Green Salad</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Mango Olive Salad</h3>
-          <p>Juliennes Of Mango, Cucumber, Olives, Bell Pepper, Olive Oil, Mint And House Dressing</p>
-          <p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-
-    </div>
-
-      <div class="row menu-items">
-        <p class="text-center course-heading">Snack Combo</p>
-        <div class="col-md-4">
-          <h3>Snack Combo</h3>
-          <p>Choice Of Any Two Snack From List And Papad With Choice Of Soda, Tea Or Chaas
-(Dahi Papdi Chaat / Pani Poori / Bhel Poori / Dahi Bateta Sev Poori / Sev Poori / Masala Chaat / Hara Bhara Bhel / Sprouts Bhel)</p>
-          <p class="text-right price"><b>Price :</b>$11.99</p>
-        </div>
-       </div> 
-
-             <div class="row menu-items">
-        <p class="text-center course-heading">Veg N Chaat Cuisine Thalis</p>
-        <div class="col-md-4">
-          <h3>House Thali</h3>
-          <p>Two Vegetables, 1 Plain Paratha Or 2 Rotis, Dal, Rice, Raita, Home Style Mint Chutney, 
-Papad And Kheer With Choice Of Soda, Chaas Or Tea</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-          <div class="col-md-4">
-          <h3>Bhel Thali</h3>
-          <p>Bhel, Two Vegetables, 1 Plain Paratha Or 2 Rotis, Kadhi, Rice, Raita, Home Style 
-Mint Chutney, Papad And Kheer With Choice Of Soda, Chaas Or Tea </p>
-          <p class="text-right price"><b>Price :</b>$11.99</p>
-        </div>
-
-       </div> 
-      <div class="row menu-items">
-        <p class="text-center course-heading">Wraps</p>
-
-        <div class="col-md-4">
-          <h3>Chilli Paneer Wrap</h3>
-          <p>Chilli Paneer Wrapped In Plain Paratha Or Spinach Paratha Served With Chaas Or Soda </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Paneer Tikka Wrap</h3>
-          <p>Cottage Cheese And Green Vegetables Cooked In A Clay Oven With Herbs And Spices; Served With Chaas Or Soda</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Paneer Bhurji Wrap</h3>
-          <p>Fresh Homemade Mashed Cheese Cooked With Spices, Wrapped In Plain Paratha Or Spinach Paratha Served With Chaas Or Soda</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-      </div>
-
-      <div class="row menu-items">
-        <p class="text-center course-heading">Tandoori Sizzlers</p>
-
-                <div class="col-md-4">
-          <h3>Tandoori Paneer Tikka</h3>
-          <p>Marinated Cheese Cubes, Roasted Bell Pepper, Onion And Spices  </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Tandoori Veggies Grill</h3>
-          <p>Herbs Marinated Cauliflower, Broccoli, Bell Pepper, Onion And Cheese </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-      </div>
-
-            <div class="row menu-items">
-        <p class="text-center course-heading">Special Items</p>
-
-                <div class="col-md-4">
-          <h3>Chana Bhatura</h3>
-          <p>Garbanzo Beans Cooked In Special Blend Of Spices Served With Puffed Leavened Bread </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Methi Poori With Bhaji</h3>
-          <p>Puffed Deep Fried Whole Wheat Bread With Fenugreek Served With Spiced Potatoes </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Poori Bhaji</h3>
-          <p>Puffed Deep Fried Whole Wheat Bread Served With Spiced Potatoes</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Pav Bhaji With Papad</h3>
-          <p>Mixture Of Vegetables, Boiled, Mashed And Cooked With Spices Served With Bun </p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Makki Di Roti & Saag</h3>
-          <p>Two Corn Flat Bread Served With Garden Fresh Mustard And Spinach </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Amritsari Kulcha Chole</h3>
-          <p>Leavened Clay Oven Bread Stuffed With Potato And Onion And Served With Spiced Chickpeas </p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Dal Dokhli</h3>
-          <p>Whole Wheat Bread Served With Spiced Lentil Soup, Garnished With Vegetables </p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Khichdi</h3>
-          <p>Rice And Lentils Cooked Together With Special Spices </p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Kadhi Chaval</h3>
-          <p>Chickpea Flour And Yogurt Based Traditional Indian Curry With Mix Veg Fritters Served With Basmati Rice  </p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-
-                        <div class="col-md-4">
-          <h3>Rajmah Chaval</h3>
-          <p>Red Kidney Beans Cooked In Traditional Indian Spices Served With Basmati Rice</p>
-          <p class="text-right price"><b>Price :</b>$8.99</p>
-        </div>
-        
-        <div class="col-md-4">
-          <h3>Veg Biryani</h3>
-          <p>Assortment Vegetables Mixed With Saffron Flavored Basmati Rice</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-      </div>
-
-       <div class="row menu-items">
-        <p class="text-center course-heading">South Express</p>
-
-        <div class="col-md-4">
-          <h3>Dahi Vada</h3>
-          <p>Sweet Yogurt, Lentil Crispy And Fluffy Fritters With Chutney</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Idly Sambar</h3>
-          <p>Fermented Steamed Rice And Lentil Patties Served With Sambar And Chutneys</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Batata Vada With Sambar</h3>
-          <p>Spiced Potato Balls Served With Sambar And Chutneys </p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Vada Sambar</h3>
-          <p>Lentil Crispy And Fluffy Fritters Soaked In Tasty And Tangy Sambar</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Curd Rice</h3>
-          <p>Curd Mix With Steamed Basmati Rice And Tempered With Lentil, Curry Leaves, Mustard Seeds, Green Chillies And Served Chilled</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-      </div>
-
- <div class="row menu-items">
-        <p class="text-center course-heading">Maharashtrian Items</p>
-
-        <div class="col-md-4">
-          <h3>Zunka Bhakar</h3>
-          <p>Flat Breads Made From Millet Flour Served With Cooked Gram Flour Curry, Authentic Marathi Spices Served With Curd And Papadum</p>
-          <p class="text-right price"><b>Price :</b>$9.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Kande Pohe</h3>
-          <p>Soaked Rice Flakes Sauteed With Onions And Spices</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Bajra Bhakar</h3>
-          <p>Pan Cooked Flat Bread Made From Millet Flour</p>
-          <p class="text-right price"><b>Price :</b>$2.49</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Sabudana Khichdi</h3>
-          <p>Sago Cooked With Potatoes, Peanuts,Cumin Seeds, Green Chillies With Spices; Served With Curd</p>
-          <p class="text-right price"><b>Price :</b>$7.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Shrikhand Poori</h3>
-          <p>Hung And Strained Yogurt Flavored With Saffron And Cardamom Served With Puffed Pooris</p>
-          <p class="text-right price"><b>Price :</b>$7.99</p>
-        </div>
-
-                <div class="col-md-4">
-          <h3>Shrikhand</h3>
-          <p>A Classic Indian Sweet Dish Made Of Hung And Strained Yogurt Flavored With Saffron And Cardamom</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-  </div>
-
-   <div class="row menu-items">
-        <p class="text-center course-heading">Exotic Refreshments</p>
-        <div class="col-md-4">
-          <h3>Masala Chai</h3>
-          <p>Delicious Traditional Indian Tea Made With Milk, Cardamom And Special Kind 
-Of Indian Herbs</p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Indian Coffee</h3>
-          <p>ndian Style Steamed Milk Coffee</p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Soda</h3>
-          <p>Coke, Diet Coke, Sprite, Fanta, Lemonade, Minute Maid 100% Juice</p>
-          <p class="text-right price"><b>Price :</b>$1.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Chaas</h3>
-          <p>Cumin Flavored Spiced Buttermilk </p>
-          <p class="text-right price"><b>Price :</b>$2.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Mango Lassi</h3>
-          <p>Classic Yogurt Drink Flavored With Mango</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Khus Lassi</h3>
-          <p>Classic Yogurt Drink Flavored With Poppy Seeds</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Gulab Lassi</h3>
-          <p>Classic Yogurt Drink Flavored With Rose</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Badam Milk</h3>
-          <p>Chilled Milk Flavored With Almond, Saffron And Nuts</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Faluda Drink</h3>
-          <p>Rose Flavored Milk With Ice Cream, Vermicelli And Nuts</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Mango Mojito</h3>
-          <p>Sugar Syrup, Fresh Mint And Mango</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Strawberry Mojito</h3>
-          <p>Fresh Mint, Sugar Syrup And Strawberry</p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Blueberry Mojito</h3>
-          <p>Fresh Mint, Lime Wedge, Sugar Syrup And Blueberry </p>
-          <p class="text-right price"><b>Price :</b>$5.99</p>
-        </div>
-    </div>  
-  <div class="row menu-items">
-        <p class="text-center course-heading">Desserts</p>
-        <div class="col-md-4">
-          <h3>Banana Split</h3>
-          <p>Three Flavored Ice Cream Scoops Edged With Banana And Toppings With Nuts</p>
-          <p class="text-right price"><b>Price :</b>$6.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Malai Kulfi</h3>
-          <p>ndian Style Rich And Creamy Ice Cream With Special Toppings</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Ice Cream</h3>
-          <p>Strawberry, Butterscotch And Choclate Flavored</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Faluda Kulfi</h3>
-          <p>Indian Style Rich And Creamy Ice Cream Topping With Rose Flavored Vermicelli</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Kheer</h3>
-          <p>A Light Dessert Of Milk With Basmati Rice And Flavored With Cardamom, Almond And Saffron</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Ras Malai</h3>
-          <p>Cheese Dumplings In Sweetened And Thickened Milk</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Gulab Jamun</h3>
-          <p>Dry Milk And Fried Cottage Cheese Dumplings Soaked In Rose Flavored Sugar Syrup</p>
-          <p class="text-right price"><b>Price :</b>$3.99</p>
-        </div>
-                <div class="col-md-4">
-          <h3>Gajjar Halwa</h3>
-          <p>A Delicious Indian Dessert Made With Grated Carrots, Whole Milk, Dried Fruits And Nuts</p>
-          <p class="text-right price"><b>Price :</b>$4.99</p>
-        </div>
-      </div>
+
+    <!-- bradcam_area_start -->
+  <div class="bradcam_area breadcam_bg_1 overlay">
+    <h3>Menu</h3>
+</div>
+<div class="menu-area">
+<div class="container">
+<div class="top-tab">
+  <ul class="nav nav-tabs top-menu" role="tablist">
+                     <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#appetizer" role="tab" aria-controls="home">Appetizer</a>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#specials" role="tab" aria-controls="specials">Daily Specials</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#star" role="tab" aria-controls="star">Star Indian Vegetable Entrees</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#breads" role="tab" aria-controls="settings">Star Indian Breads</a></li>
+           <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Salads" role="tab" aria-controls="home">Star Indian Soups & Salads</a>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#thalis" role="tab" aria-controls="specials">Thalis</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kababs" role="tab" aria-controls="star">Tandoori Kababs</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat" role="tab" aria-controls="settings">Star Chat Wraps</a></li>
+           <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#refreshments" role="tab" aria-controls="star">Refreshments and Beverages</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#desserts" role="tab" aria-controls="settings">Desserts</a></li>
+          
+                  </ul>
+          </div>
+<div class="menu_list  tab-content">
+<div class="tab-pane active" id="appetizer" role="tabpanel">
+<div class="head1">
+<h2>Appetizer</h2>
+<h5>
+“Food is our common ground, a universal experience”-James Beard
+</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Potato Peas Samosa – 2pc <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Crispy Fried Dumplings Filled with Spiced Potatoes and Peas Served with Chutney.</p>
+</div>
+<div class="box-li">
+<h3>French Fries <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Old-Skool French Fries Served With Ketchup.</p>
+</div>
+<div class="box-li">
+<h3>Vada Pav – 1pc</h3>
+<p>Irresistibly Flavorful Potato balls, Sandwiched Between Two Slices Of Pav Served With Chutneys.</p>
+</div>
+<div class="box-li">
+<h3>Aloo Vada – 2pc</h3>
+<p>Indulge Yourself in The Taste of flavored Mashed Potato Dumplings Served with Chutneys</p>
+</div>
+<div class="box-li">
+<h3>“Star Chaat Special” Burger</h3>
+<p>Burger Loaded with Healthy vegetables and ‘yummylicious’ Patty of Potato, always Served With Fries And Choice Of Soda.</p>
+</div>
+<div class="box-li">
+<h3>Bombay’s Masala Dabeli – 2pc</h3>
+<p>Explore the flavors of ‘Bombay’ Street food, Bun packed with spicy filling of Potatoes Topped with Onion, Pomegranate, Cilantro, Peanuts and Sev.</p>
+</div>
+<div class="box-li">
+<h3>Papdi Chaat <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Yummy Snack Assorted With a Crunchy Base of ‘Papdi’ (crisp pooris), topped with lip-smacking chutneys, veggies and curd.</p>
+</div>
+<div class="box-li">
+<h3>Dahi Vada/Bhalla <img src="{% static 'blog/img/Jain_Option1.png' %}"> </h3>
+<p>Soft Fried Lentil Dumplings Topped With Chilled Yogurt, Potato, Onion, Crispy Wafers And Chutneys </p>
+</div>
+<div class="box-li">
+<h3>Pani Poori/Gol-Gappe <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>India’s most-loved street food; hollow Crisp-fried balls filled with potatoes, chick-peas, onions and sprouts, mingled with tangy flavorful water.</p>
+</div>
+<div class="box-li">
+<h3>Bombay Bhel Poori <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p> Savory Chaat made with rice-puffs, mixed with market-fresh vegetables like onions, potatoes, sprouts  and chickpeas, sprinkled with fine sev.</p>
+</div>
+<div class="box-li">
+<h3>Hari Bhari Bhel <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3>
+<p>Nutritious, mouth-watering and delicious  snack  made with Puffed Rice Mixed With Cucumber, Tomato, Crispy Wafers, Chickpeas, Potato.</p>
+</div>
+<div class="box-li">
+<h3>Sprouts Bhel <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"><img src="{% static 'blog/img/gluten_Free.png' %}">  </h3>
+<p>A wonderful preparation of rice-puffs mixed with protein-rich sprouts, crunchy veggies , tangy chutneys and other spices.</p>
+</div>
+<div class="box-li">
+<h3>Dahi Aloo  Sev Poori <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Enjoy this satiating and mouth-watering preparation of crisp-fried hollow pooris filled with boiled potatoes, chick-peas, onions.</p>
+</div>
+<div class="box-li">
+<h3>Sev Poori <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Enjoy this satiating and mouth-watering preparation of crisp-fried hollow pooris filled with boiled potatoes, chick-peas, onions..</p>
+</div><div class="box-li" style="min-height:289px;"><h3>Snack Combo</h3><p>Enjoy any two snacks of your choice in this wonderful combo-deal, includes papads and your choice of beverage.</p><ul><li style="list-style-type: square;    color: #000;    font-size: 14px;    text-transform: uppercase;    font-weight: bold;    margin: px;    padding: 0px;    ">Choice of Snacks</br>{ Papdi Chaat / Dahi Vada / Pani Puri / Bombay Bhel Puri / Hari Bhari Bhel / Sprouts Bhel / Dahi    Aloo Sev Puri / Sev Puri / Papdi Masala Chaat }</li><li style="list-style-type: square;    color: #000;    font-size: 14px;    text-transform: uppercase;    font-weight: bold;    margin: px;    padding: 0px;   ">Choice of Beverage</br>{ Soda / Coffee / Tea }</li></ul></div></div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$4.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div><div class="box-li" style="min-height:289px;"><h3>$11.99</h3></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12 col-md-6 ">
+<div class="row">
+<div class="col-sm-10 col-md-10  col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li"><h3>Papdi Masala Chaat </h3><p>Crispy Wafers Layered With Potato, Cucumber, Sprouts, Tomato, Sev, Onion, Chutney, Chickpeas And Spices</p></div><div class="box-li"><h3>Crispy Chaat Basket</h3><p>Enjoy this flour-made crispy basket filled with combination of moong sprouts, fresh-cut mix vegetables and boiled potatoes assorted in yogurt and tangy chutneys.</p></div><div class="box-li"><h3>Haryali Kabab- 2pc</h3><p>Eye appealing and delectable deep-fried Vegetables kababs (Patties) prepared With Spinach, Ginger, Potato, Broccoli And Spices Served With Yogurt And Chutneys.</p></div><div class="box-li"><h3>Chana Samosa – 2pc <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Crisp-Fried, tri-cornered Dumplings Served With chickpeas gravy, Crowned With Chutneys And Onions.</p></div>
+<div class="box-li"><h3>Aloo Tikki With Chole – 2 pc <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Fritters made with Deep Fried Chickpea Flour Batter with onions, Potato, cauliflower, spinach; Served With Chutneys.</p></div>
+<div class="box-li"><h3>Mix Veg Pakora <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"></h3><p>Deep-fried Mashed Potato cutlets Served With chickpeas gravy, topped With Chutneys And Onions.</p></div><div class="box-li"><h3>Paneer Pakora <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Indian Cottage cheese Fritters Deep Fried with Chickpea Flour Batter; Sprinkled With Chat Masala; Served With Chutneys.</p></div><div class="box-li"><h3>Chilly Pakora  <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Spicy Jalapeno Fritters, Deep Fried with Chickpea Flour Batter Sprinkled With Chat Masala Served With Chutneys.</p></div><div class="box-li"><h3>Usal Pav <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>“Famous Maharashtrian street-food” prepared with green peas mixed with traditionally spicy chutneys and topped with tangy chutneys and onions. Always served with buttery pav-bread.</p></div><div class="box-li"><h3>Spicy Misal Pav <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Sprouted Moth Beans Topped With Onion, Cilantro, Served With Lemon And Toasted Pav.</p></div><div class="box-li"><h3>Gujrati Ragada Patties <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>A yummy traditional dish of potato cutlets; loaded with green peas curry; laced with sweet and spicy chutney and garnished with onions and cilantro. </p></div><div class="box-li"><h3>Veg Chow Mein <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Made with stir-fried cabbage, carrots, green-onions mixed with chow Mein noodles in a savory sauce</p></div><div class="box-li"><h3>Vegetarian Manchurian Dry/Gravy <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Palatable and Satiating  dish of mixed vegetable dumplings in a glossy, rich-brown chef’s special sauce with bold notes of tangy, sweet, spicy and salty; impossible to resist.</p></div><div class="box-li"><h3>Gobi Manchurian Dry/Gravy<img src="{% static 'blog/img/vegan.png' %}"></h3><p>Crispy-fried Cauliflower Florets tossed in a mouth-watering , sweet and spicey sauce that elevate your taste buds with its zesty flavors. </p></div><div class="box-li" style="min-height:289px; background:none;"></div></div>
+</div>
+<div class="col-sm-2 col-md-2 col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$7.99</h3></div><div class="box-li"><h3>$5.99</h3></div><div class="box-li"><h3>$6.99</h3></div><div class="box-li"><h3>$9.99</h3></div><div class="box-li" style="min-height:289px;"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+<div class="tab-pane" id="specials" role="tabpanel">
+<div class="head1">
+<h2>Daily Specials</h2>
+<h5>
+“Good food is Wise medicine”- Alison Levitt
+</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Idly  Sambar</h3>
+<p>Savory Rice Cakes Served With Lentil-based Vegetable Stew or Chowder, Cooked With Dal and Tamarind .</p>
+</div>
+<div class="box-li">
+<h3>Chole Bhature<img src="{% static 'blog/img/Jain_Option1.png' %}"></h3>
+<p>Soft and puffy fried leavened bread served with spiced tangy gravy of chick-peas; comes with onions and pickles on the side.</p>
+</div>
+<div class="box-li">
+<h3>Aloo Poori <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Deep-fat fried bread made from unleavened whole-wheat flour With Spiced Potatoes.</p>
+</div>
+<div class="box-li">
+<h3>Masala Methi Poori <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Deep-fat fried bread made from unleavened whole-wheat flour With natural flavor of Fenugreek Served With Seasoned Spiced Potatoes, onions, and pickle.</p>
+</div>
+<div class="box-li">
+<h3>Bombay Masala Pav Bhaji </h3>
+<p>“Mumbai famous local street food”; smashed vegetable curry cooked with special Pav Bhaji masala and loads of butter, served with Pav Bread slathered with butter.</p>
+</div>
+<div class="box-li">
+<h3>Makki Di Roti & Sarson Saag <img src="{% static 'blog/img/Jain_Option1.png' %}"> </h3>
+<p>“World Famous Punjabi Signature Dish” with healthy and delicious silky curry of mustard leaves, served with two Flat Breads of yellow corn.</p>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+<div class="col-lg-6 col-sm-12 col-md-6 ">
+<div class="row">
+<div class="col-sm-10 col-md-10  col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li"><h3>Ambarsari Naan </h3><p>A typical Punjabi stuffed bread recipe prepared with all-purpose flour/maida with potato stuffing, baked in Clay-oven; Served with chickpea curry and onions salad.</p></div><div class="box-li"><h3>Moong Khichdi <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Delicious, Protein-packed healthy and filling dish made with rice and moong lentils mixed with special spices; all cooked together in one pot.</p></div><div class="box-li"><h3>Kadhi Chawal</h3><p>Chickpea Flour And Yogurt Based Traditional Indian Curry With Mix-Veg Fritters Served With Aromatic White Basmati Rice.</p></div><div class="box-li"><h3>Gujrati Dal Dhokli <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>A tangy, very slightly sweet and lip-smacking “Gujrat famous” dish cooked by simmering whole wheat flour bits in a lentil-based assortment served with flavorsome whole-wheat bread.</p></div><div class="box-li"><h3>Mix-Veggie Biryani  </h3><p>A healthy and delicious assortment of vegetables and rice-layers of aromatic long grain basmati rice and mixed vegetables; Served with cucumber raita.</p></div><div class="box-li"><h3>Indian Vegetable Fried Rice <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/Jain_Option1.png' %}"></h3><p>The Classical Basmati Rice Tossed With Assortment of stir-fried Green Vegetables.</p></div>
+
+
+</div>
+</div>
+<div class="col-sm-2 col-md-2 col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$8.99</h3></div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<div class="tab-pane" id="star" role="tabpanel">
+<div class="head1">
+<h2>Star Indian Vegetable Entrees</h2>
+<h5>“Let food be thy medicine and medicine be thy food.” ― Hippocrates</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Fresh Aloo Methi <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}">  </h3>
+<p>Diced Potatoes And Chopped Fresh Fenugreek Leaves Cooked With Herbs And Spices.</p>
+</div>
+<div class="box-li">
+<h3>Aloo Jeera Masala <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/Jain_Option1.png' %}"></h3>
+<p>Spicy and Mouth-watering diced Potatoes dish Cooked With Royal Cumin, Ginger, Garlic And Spices.</p>
+</div>
+<div class="box-li">
+<h3>Shahi Aloo Gobi Matar <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3>
+<p>Potatoes and cauliflower cooked with green peas, onions, tomatoes and tons of sense teasing aromatic spices. </p>
+</div>
+<div class="box-li">
+<h3>Aloo Baingan <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Traditional Indian eggplant dish cooked with eggplants and potatoes in a spicey onion-tomato masala full of Indian spices.</p>
+</div>
+<div class="box-li">
+<h3>Aloo Palak Sabzi <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Healthy and Nutritious, home-cooked style dish made of diced potatoes and spinach leaves .</p>
+</div>
+<div class="box-li">
+<h3>Aloo Matter<img src="{% static 'blog/img/Jain_Option1.png' %}"><img src="{% static 'blog/img/vegan.png' %}"><img src="{% static 'blog/img/gluten_Free.png' %}"></h3>
+<p>Popular Indian vegetarian dishcooked with mildly spiced potatoes and green peas in a silky onion gravy.</p>
+</div>
+<div class="box-li">
+<h3>Shahi Dum Aloo<img src="{% static 'blog/img/gluten_Free.png' %}"></h3>
+<p>Delicious and Creamy dish of potatoes stuffed with mixture of ground dry-fruits in spicy onion-tomato and yogurt gravy.</p>
+</div>
+<div class="box-li">
+<h3>Paneer Makhani (Signature Special) <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/Jain_Option1.png' %}"></h3>
+<p>Home-Made Indian Cottage Cheese Cubes Cooked With Creamy tomato-onion  Gravy loaded with spices.</p>
+</div>
+<div class="box-li">
+<h3>Paneer Tikka Gravy  <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3>
+<p>Home Made Indian Cottage Cheese Cubes Cooked With Ginger, Garlic, Spring Onion And Special Creamy Sauce.</p>
+</div>
+<div class="box-li">
+<h3>Fresh Masala Bhindi  <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3>
+<p>Market-Fresh Okra stir-fried With Onion, Ginger, Garlic, Tomatoes And Star Chat India Special Spices. </p>
+</div>
+<div class="box-li">
+<h3>Bhartha Baingan <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3>
+<p>Oven-Clay Fire-roasted eggplant mash cooked with onions, tomatoes, ginger-garlic and aromatic Indian spices.</p>
+</div>
+<div class="box-li">
+<h3>Creamy Malai Kofta</h3>
+<p>Crispy Fried Dumplings Filled with Spiced Potatoes and Peas Served with Chutney.</p>
+</div>
+<div class="box-li">
+<h3>Patiala Shahi Mix Veg <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Royal Patiala Shahi style assortment of farmer-fresh Mixed Vegetables Cooked With Ginger, Garlic, Tomato gravy and Spices.</p>
+</div>
+<div class="box-li">
+<h3>Creamy Veg Korma <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3>
+<p>Delectable Indian Vegetable Korma, loaded with  Cauliflower, potatoes, tomatoes, carrots, peas, and green beans mixed in a silkened gravy of Indian Spices.</p>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$8.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+<div class="col-lg-6 col-sm-12 col-md-6 ">
+<div class="row">
+<div class="col-sm-10 col-md-10  col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li"><h3>Saag Paneer  <img src="{% static 'blog/img/gluten_Free.png' %}"></h3><p>Indian Cottage Cheese cubes Tossed in Garden Fresh Spinach and Mustard leaves gravy Cooked With Ginger, Garlic, Onion, Tomato.</p></div><div class="box-li"><h3>Matter Paneer Lababdaar <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Indian cottage cheese Cubes and green peas simmered together in a luscious gravy made with tomatoes, onions and spices garnished with fresh cilantro; all- time popular Indian paneer Dish.</p></div><div class="box-li"><h3>Indian Style Chilli Paneer <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Indian Style Cheese cubes cooked with bell pepper, Onions, ginger-garlic and Star-chat Special Spices.</p></div><div class="box-li"><h3>Paneer Bhurji <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Cottage Cheese Cooked lathered with medium-spicy sauce made up With Ginger, Garlic, Tomato, Peas And Traditional Indian Spices</p></div><div class="box-li"><h3>Chole Masala <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"></h3><p>White Chickpeas Cooked in the silkened gravy made of  Onions, Tomatoes, Star chat Indian special Spices And Garnished With Fresh Cilantro.</p></div><div class="box-li"><h3>Punjabi Chana Saag <img src="{% static 'blog/img/gluten_Free.png' %}"></h3><p>Delicious Silky-Smooth Gravy made of Fresh Chopped Spinach and Mustard Leaves mixed with White Chick-peas.</p></div><div class="box-li"><h3>Punjabi Rajmah <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"></h3><p>Red Kidney Beans cooked in lightly spiced, creamy curry made with onions, tomatoes and flavorsome spices.</p></div><div class="box-li"><h3>Toor Dal <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Yellow pigeon-peas Soup simmered With Curry Leaves, Dry Whole Red Chilies In Traditional Indian Spices.</p></div><div class="box-li"><h3>Punjabi Tadka Dal <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3><p>Traditional Yellow Moong-Masoor Lentils slow-cooked With Onion, Ginger, Garlic And Special Spices laced with aromatic royal cumin.</p></div><div class="box-li"><h3>Punjabi Dhaba Special ‘Dal Makhani’ <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3><p>True Dhaba Style Irresistible and Yummiciously protein-rich traditional Black grams and kidney beans Simmered On Low heat With Tomato, Red Chilies, Ginger And Garlic.</p></div><div class="box-li"><h3>Dal Palak <img src="{% static 'blog/img/gluten_Free.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3><p>Smoothened Yellow-lentils slow cooked with spinach leaves  mixed with spices; bringing nourishment and taste together.</p></div><div class="box-li"><h3>Kadai Paneer <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3><p>Indian Cottage Cheese Sauted with Bell pepper and Onion in Yogurt Based Traditional Indian Curry with Spices.</p></div><div class="box-li"><h3>Punjabi Kadhi Pakora <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3><p>Popular Indian appetizer ‘Mix-veg Pakora’ (Deep fried fritters)  dunked in a yogurt based curry made with chick-pea flour and spices.</p></div><div class="box-li"><h3>Punjabi Tadka Saag <img src="{% static 'blog/img/gluten_Free.png' %}"> </h3><p>Garden Fresh chopped Spinach And Mustard leaves Cooked With Ginger, Garlic, Onion, Tomato With Special Punjabi Tadka.</p></div>
+
+
+</div>
+</div>
+<div class="col-sm-2 col-md-2 col-xs-2">
+<h3>price</h3>
+<div class="box-left"><div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$9.99</h3></div><div class="box-li"><h3>$8.99</h3></div><div class="box-li"><h3>$9.99</h3></div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="breads" role="tabpanel">
+<div class="head1">
+<h2>Star Indian Breads</h2>
+<h5>Fresh Home Made Whole Wheat Breads</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Palak Paratha <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Pan-fried Whole Wheat Bread, Stuffed With Fresh Spinach And Special Mixtures Of Spices.</p>
+</div>
+<div class="box-li">
+<h3>Methi Paratha <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Pan-fried Whole Wheat Bread Stuffed, With Fenugreek And Special Mixtures Of Spices.</p>
+</div>
+<div class="box-li">
+<h3>Aloo Paratha <img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Pan-fried Whole Wheat Bread, Stuffed With Spiced Mashed Potatoes and cilantro.</p>
+</div><div class="box-li"><h3>Muli Paratha <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Pan-fried Whole Wheat Bread, Stuffed With Grated Radish And Spices.</p></div>
+<div class="box-li">
+<h3>Gobi Paratha <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Pan-fried Whole-Wheat Bread, Stuffed with Minced Cauliflower mixed with Special Spices.</p>
+</div>
+<div class="box-li">
+<h3>Green-Veg Paratha<img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Pan-Fried Whole Wheat Bread, Stuffed With grated mix-Vegetables.</p>
+</div>
+<div class="box-li">
+<h3>Paneer Paratha</h3>
+<p>Pan-fried Whole Wheat Bread, Stuffed With Mashed Home-Made Indian Cottage Cheese, Onions And Special Mixtures Of Spices.</p>
+</div>
+<div class="box-li">
+<h3>Plain Paratha <img src="{% static 'blog/img/Jain_Option1.png' %}"></h3>
+<p>Pan-fried crispy and flaky Whole Wheat Bread.</p>
+</div>
+<div class="box-li">
+<h3>Tawa Roti (2) <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Traditional Whole Wheat Indian Flat-Bread.</p>
+</div>
+<div class="box-li">
+<h3>Makki Di Roti <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Traditional Punjabi Yellow Corn Flat-bread Slow Cooked on Tawa.</p>
+</div>
+<div class="box-li">
+<h3>Methi-Masala Roti<img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Traditional Indian Flat-bread made from whole wheat dough kneaded with dry Fenugreek leaves and spices.</p>
+</div>
+<div class="box-li">
+<h3>Palak Puri (2pc) <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Traditional Indian deep-fried puffy bread made from whole wheat dough kneaded fresh spinach leaves.</p>
+</div>
+<div class="box-li">
+<h3>Methi Puri (2pc) <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3>
+<p>Traditional Indian deep-fried puffy bread made from whole wheat dough kneaded with Dry Fenugreek leaves.</p>
+</div>
+
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div><div class="box-li"><h3>$3.99</h3></div><div class="box-li"><h3>$1.99</h3></div><div class="box-li"><h3>$1.49</h3></div><div class="box-li"><h3>$1.49</h3></div><div class="box-li"><h3>$2.49</h3></div>
+<div class="box-li"><h3>$2.99</h3></div><div class="box-li"><h3>$2.99</h3></div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+<div class="col-lg-6 col-sm-12 col-md-6 ">
+<div class="row">
+<div class="col-sm-10 col-md-10  col-xs-10">
+<h3>Meals</h3>
+<div class="box-left"><div class="box-li"><h3>Puri (2pc) <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Crispy and Puffy deep-fried Bread, made from whole wheat flour.</p></div>
+<div class="box-li"><h3>Bhatura (2pc)  <img src="{% static 'blog/img/Jain_Option1.png' %}"> </h3><p>Soft and Puffy Deep Fried Bread made with Leavened whole wheat flour dough.</p></div><div class="box-li"><h3>Plain Naan / Butter Naan <img src="{% static 'blog/img/Jain_Option1.png' %}"> </h3><p>White Flour Bread, Baked In Charcoal Fired Clay Oven.</p></div><div class="box-li"><h3>Garlic Naan </h3><p>White Flour Bread laced with garlic and cilantro Baked In Charcoal Fired Clay Oven</p></div><div class="box-li"><h3>Lachha Paratha <img src="{% static 'blog/img/Jain_Option1.png' %}"> </h3> <p>Flaky And Layered Whole Wheat Bread Pan-fried on Tawa.</p></div><div class="box-li"><h3>Ajwain Paratha <img src="{% static 'blog/img/Jain_Option1.png' %}"> </h3><p>Flaky And Layered Whole Wheat Bread Sprinkled with Carom Seeds Pan-fried on Tawa.</p></div><div class="box-li"><h3>Aloo Kulcha </h3><p>Clay-Oven cooked Bread made with leavened dough Stuffed With Potato And fresh Cilantro.</p></div><div class="box-li"><h3>Onion Kulcha  </h3><p>Clay-Oven cooked Bread made with leavened dough Stuffed With grated onions And fresh Cilantro.</p></div><div class="box-li"><h3>Paneer Kulcha   </h3><p>Clay-Oven cooked Bread made with leavened dough Stuffed With grated Indian Cottage cheese , onions, And fresh Cilantro.</p></div><div class="box-li"><h3>Tandoori Roti <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> </h3><p>Clay Oven Cooked Traditional whole wheat Indian Bread.</p></div><div class="box-li"><h3>Jeera Basmati Rice <img src="{% static 'blog/img/Jain_Option1.png' %}"> <img src="{% static 'blog/img/vegan.png' %}"> <img src="{% static 'blog/img/gluten_Free.png' %}"></h3><p>Aromatic Basmati Rice infused With Cumin.</p></div><div class="box-li"><h3>Mix-Veg Raita </h3><p>Yogurt sauce mixed with fresh-cut mix vegetables and spices.</p></div>
+<div class="box-li" style="background:none;"></div>
+
+
+</div>
+</div>
+<div class="col-sm-2 col-md-2 col-xs-2">
+<h3>price</h3>
+<div class="box-left"><div class="box-li"><h3>$2.49</h3></div>
+<div class="box-li"><h3>$2.99</h3></div><div class="box-li"><h3>$1.99</h3></div><div class="box-li"><h3>$2.99</h3></div><div class="box-li"><h3>$3.99</h3></div><div class="box-li"><h3>$3.99</h3></div><div class="box-li"><h3>$3.99</h3></div><div class="box-li"><h3>$3.99</h3></div><div class="box-li"><h3>$4.99</h3></div><div class="box-li"><h3>$2.49</h3></div><div class="box-li"><h3>$2.99</h3></div><div class="box-li"><h3>$2.99</h3></div><div class="box-li"></div></div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="Salads" role="tabpanel">
+<div class="head1">
+<h2>Star Indian Soups & Salads</h2>
+<h5>Worries go down better with soup than without. —Jewish Proverb</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Classic Tomato Soup <img src="{% static 'blog/img/Jain_Option1.png' %}"><img src="{% static 'blog/img/vegan.png' %}"></h3>
+<p>Made with Ginger and Fresh Tomatoes with Bread Garnishing.</p>
+</div>
+<div class="box-li">
+<h3>Star Chat Mix Veg Soup</h3>
+<p>Delicious and appetizing soup made with Fresh Mix Vegetables.</p>
+</div>
+<div class="box-li">
+<h3>Green Salad</h3>
+<p>Light and Healthy salad, Made with Tomatoes, Cucumber, Onions, and Lettuce.</p>
+</div>
+
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$5.99</h3>
+</div>
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="thalis" role="tabpanel">
+<div class="head1">
+<h2>Thalis</h2>
+<h5>"I love Indian food - it's my favorite cuisine. I love the <br>mixture of spices and the subtle flavors. It's really<br> erotic; the spices are so sensuous." ~ Joe Perry</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Star Chat House Thali</h3>
+<p>Two Vegetables, 1 Plain Paratha Or 2 Rotis, Dal, Rice, Raita, Home Style Mint Chutney, Papad And Kheer With Choice Of Soda, Chaas Or Tea </p>
+</div>
+<div class="box-li">
+<h3>Bhel-Sev  Thali</h3>
+<p>Bhel, Two Vegetables, 1 Plain Paratha Or 2 Rotis, Kadhi, Rice, Raita, Home Style Mint Chutney, Papad And Kheer With Choice Of Soda, Chaas Or Tea </p>
+</div>
+
+
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$11.99</h3>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="kababs" role="tabpanel">
+<div class="head1">
+<h2>Tandoori Kababs</h2><h5>"Featuring the most succulent kebabs from around the nation."</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Tandoori Paneer Tikka</h3>
+<p>Marinated Indian Cottage cheese cubes, layered with Bell pepper and onions, roasted in charcoal-fired Clay-oven.</p>
+</div>
+<div class="box-li">
+<h3>Mix-Vegetable Grill</h3>
+<p>Marinated fresh-cut Vegetables and cheese cubes oven-sroasted in traditional clay oven.</p>
+</div>
+
+
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$10.99</h3>
+</div>
+<div class="box-li">
+<h3>$10.99</h3>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="chat" role="tabpanel">
+<div class="head1">
+<h2>Star Chat Wraps</h2>
+<h5>“There is a love sincerer to the love of food”- George Bernard Shaw</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>SpiceyPaneer Wrap<img src="{% static 'blog/img/Jain_Option1.png' %}"></h3>
+<p>Indian Cottage Cheese Wrapped In Plain Paratha Or Spinach Paratha Served With Chaas Or Soda</p>
+</div>
+<div class="box-li">
+<h3>Tandoori Paneer Tikka Wrap</h3>
+<p>Clay-oven roasted Marinated  Indian cottage cheese cubed with onions and bell pepper wrapped between naan bread Served With Chaas Or Soda.</p>
+</div>
+<div class="box-li">
+<h3>Paneer Bhurji Paratha Wrap<img src="{% static 'blog/img/Jain_Option1.png' %}"></h3>
+<p>Fresh Homemade Mashed Cheese Cooked With Spices, Wrapped In Plain Paratha Or Spinach Paratha Served With Chaas Or Soda.</p>
+</div>
+<div class="box-li">
+<h3>Mix Veg Wrap</h3>
+<p>Deep-fried Aloo Cutlet with Green chopped salad, Wrapped In fresh oven-cooked Naan Served With Chaas Or Soda.</p>
+</div>
+
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+<div class="box-li">
+<h3>$9.99</h3>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="refreshments" role="tabpanel">
+<div class="head1">
+<h2>Refreshments and Beverages</h2>
+<h5>“Some people will tell you there is a great deal of poetry and</br> fine sentiment in a chest of tea". -Ralph Waldo Emerson</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Masala Chai</h3>
+<p>Indian Tea Made With Milk, and Cardamom.</p>
+</div>
+<div class="box-li">
+<h3>Indian Coffee</h3>
+<p>Indian Style Milk Coffee flavored with special ingredients.</p>
+</div>
+<div class="box-li">
+<h3>Soda</h3>
+<p>Diet Coke , Fanta, Sprite, Lemonade.</p>
+</div>
+<div class="box-li">
+<h3>Mint Chaas</h3>
+<p>Mint Cumin Flavored Spiced Buttermilk.</p>
+</div>
+<div class="box-li">
+<h3>Mango Lassi</h3>
+<p>Mango Flavored Refreshing Classical Indian Yogurt Drink.</p>
+</div>
+<div class="box-li">
+<h3>Gulab Lassi</h3>
+<p>Rose Flavored Refreshing Classical Indian Yogurt Drink.</p>
+</div>
+<div class="box-li">
+<h3>Milk Badam</h3>
+<p>Refreshing cold-drink made from Milk  mixed with Almond and notes of saffron.</p>
+</div>
+<div class="box-li">
+<h3>Faluda Drink</h3>
+<p>Vermicelli and Ice-cream dunked in refreshing cold-drink made from Milk, flavored with rose.</p>
+</div>
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$1.99</h3>
+</div>
+<div class="box-li">
+<h3>$1.99</h3>
+</div>
+<div class="box-li">
+<h3>$1.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+<div class="box-li">
+<h3>$2.99</h3>
+</div>
+<div class="box-li">
+<h3>$4.99</h3>
+</div>
+<div class="box-li">
+<h3>$4.99</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="desserts" role="tabpanel">
+<div class="head1">
+<h2>Desserts</h2>
+<h5>“Stressed is Desserts spelled backwards”</h5>
+</div>
+
+<div class="menu-start">
+
+<div class="row">
+<div class=" col-lg-6 col-sm-12 col-md-6">
+<div class="row">
+<div class=" col-md-10  col-sm-10 col-xs-10">
+<h3>Meals</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>Kulfi (Mango/Malai/Kesar-Pista)</h3>
+<p>Popular Indian Ice-cream dessert.</p>
+</div>
+<div class="box-li">
+<h3>Faluda Kulfi</h3>
+<p>Popular Indian Ice-cream dessert crowned with vermicelli and rose syrup.</p>
+</div>
+<div class="box-li">
+<h3>Kheer</h3>
+<p>Dessert Of Milk slow-cooked With Basmati Rice And Flavored With Cardamom, Almond And Saffron.</p>
+</div>
+<div class="box-li">
+<h3>Ras Malai</h3>
+<p>Dumplings made from cottage cheese soaked in sweetened, thickened milk flavored with cardamom.</p>
+</div>
+<div class="box-li">
+<h3>Gulab Jamun</h3>
+<p>Deep-fried dumpling made from milk solids, dipped in a rose-cardamom flavored sugar syrup.</p>
+</div>
+<div class="box-li">
+<h3>Gajjar Halwa</h3>
+<p>A Delicious Indian Dessert Made With Grated Carrots, Whole Milk(Khoya), Dried Fruits And Nuts</p>
+</div>
+<div class="box-li">
+<h3>Moong Dal Halwa</h3>
+<p>Sweet dish Made With Moong lentil Flour, Sugar and  Desi Ghee Flavored with Cardamoms.</p>
+</div>
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2  col-xs-2">
+<h3>price</h3>
+<div class="box-left">
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+<div class="box-li">
+<h3>$4.99</h3>
+</div>
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+<div class="box-li">
+<h3>$3.99</h3>
+</div>
+<div class="box-li">
+<h3>$4.99</h3>
+</div>
+<div class="box-li">
+<h3>$4.99</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="head2">
+<h2>Thanks</h2>
+
+</div>
+</div>
+ </div>
+ 
+</div>
+
 {% endblock content %}
