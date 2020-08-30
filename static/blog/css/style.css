@@ -716,6 +716,10 @@ h3 {
   outline: none;
 }
 
+#reserve-table {
+	display: none;
+}
+
 @media (max-width: 767px) {
   /* line 56, */
   .boxed-btn5 {
